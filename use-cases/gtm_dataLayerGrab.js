@@ -1,0 +1,1 @@
+window.google_tag_manager[{{Container ID}}].dataLayer.get('variableNameHere');

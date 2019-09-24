@@ -1,0 +1,79 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2017-12-21 10:09:39",
+    "containerVersion": {
+        "path": "accounts/2201589682/containers/8110264/versions/0",
+        "accountId": "2201589682",
+        "containerId": "8110264",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/2201589682/containers/8110264",
+            "accountId": "2201589682",
+            "containerId": "8110264",
+            "name": "iframe",
+            "publicId": "GTM-NF2GCLX",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1513850971496",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/2201589682/containers/8110264/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "2201589682",
+                "containerId": "8110264",
+                "tagId": "1",
+                "name": "Sender - postMessage- form Submits",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  try {\n      var postObject = JSON.stringify({\n        event: 'iframeFormSubmit', \n        form: 'Contact Us'\n      });\n      parent.postMessage(postObject, 'http://demoshop.com');\n} catch(e) {\n  window.console && window.console.log(e);\n}\n  </script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1513850940967",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "2201589682",
+                "containerId": "8110264",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110264",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110264",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110264",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110264",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/2201589682/containers/8110264/versions/0?apiLink=version"
+    }
+}

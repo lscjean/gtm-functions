@@ -1,0 +1,161 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2017-12-21 10:17:34",
+    "containerVersion": {
+        "path": "accounts/2201589682/containers/8110267/versions/0",
+        "accountId": "2201589682",
+        "containerId": "8110267",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/2201589682/containers/8110267",
+            "accountId": "2201589682",
+            "containerId": "8110267",
+            "name": "Parent Frame",
+            "publicId": "GTM-MZXVB3R",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1513851437435",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/2201589682/containers/8110267/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "tagId": "2",
+                "name": "Listener - postMessages",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script type=\"text/javascript\">\n(function(window) {\n\n    addEvent(window, 'message', function(message) {\n      try{\n      var data = JSON.parse(message.data);\n      var dataLayer = window.dataLayer || (window.dataLayer = []);\n      if (data.event) {\n        dataLayer.push({\n          'event': data.event,\n          'postMessageData': data\n        });\n      }\n      }catch(e){}\n    });\n\n    // Cross-browser event listener\n    function addEvent(el, evt, fn) {\n      if (el.addEventListener) {\n        el.addEventListener(evt, fn);\n      } else if (el.attachEvent) {\n        el.attachEvent('on' + evt, function(evt) {\n          fn.call(el, evt);\n        });\n      } else if (typeof el['on' + evt] === 'undefined' || el['on' + evt] === null) {\n        el['on' + evt] = function(evt) {\n          fn.call(el, evt);\n        };\n      }\n    }\n\n  })(window);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1513605668805",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "triggerId": "8",
+                "name": "custom - iframeFormSubmit",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "iframeFormSubmit"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1513605879380"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "triggerId": "7",
+                "name": "pv - iframe",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "iframe"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1513605666321"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "variableId": "2",
+                "name": "dlv - postMessageData",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "postMessageData.form"
+                    }
+                ],
+                "fingerprint": "1513851409517"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "2201589682",
+                "containerId": "8110267",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/2201589682/containers/8110267/versions/0?apiLink=version"
+    }
+}
